@@ -39,3 +39,6 @@ El tutorial también consistirá en la explicación general de las mecánicas pr
 
 ### 11-12-23
 Se analizaron las características y estructura del juego, se documentaron los puntos más importantes de las mecánicas principales y se distinguieron los objetos y condiciones de victoria y derrota.
+
+### 13-12-23
+Se crearon assets para el tutorial. Se decidieron las mecanicas y puntos importantes a explicar en el tutorial. Se construyo la escena del tutorial y se distribuyeron algunos assets creados como el fondo. Es posible dar una propuesta de cambio de distribucion en el juego.
