@@ -42,3 +42,6 @@ Se analizaron las características y estructura del juego, se documentaron los p
 
 ### 13-12-23
 Se crearon assets para el tutorial. Se decidieron las mecanicas y puntos importantes a explicar en el tutorial. Se construyo la escena del tutorial y se distribuyeron algunos assets creados como el fondo. Es posible dar una propuesta de cambio de distribucion en el juego.
+
+### 14-12-23
+Se terminó de implementar el tutorial. Se crearon los assets explicativos de los puntos que se consideran principales. También se cambió la distribución de los elementos en la escena y se optó por la fuente del Metro con fines estéticos (es posible que se llegue a modificar). Se cambiaron los nombres de las escenas y se hicieron los cambios necesarios en scripts y escenas para integrar este cambio con fines de formato con otros juegos.
