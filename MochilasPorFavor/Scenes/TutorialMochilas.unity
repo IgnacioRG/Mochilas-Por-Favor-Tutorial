@@ -711,8 +711,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 72585f0c4cb06eb4abf0fbee5b4ba627, type: 3}
-    m_FontSize: 17
+    m_Font: {fileID: 12800000, guid: 45df14658fc7fdc4db25146ba487ed98, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -723,7 +723,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\xA1Mochilas por favor! Revisa las mochilas  y deja entrar a las personas
+  m_Text: "\xA1Mochilas por favor! Revisa las mochilas y deja entrar a las personas
     que cumplan el reglamento."
 --- !u!222 &900017983
 CanvasRenderer:

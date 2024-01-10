@@ -64,7 +64,7 @@ public class MochilasTutorial : MonoBehaviour
      */
     IEnumerator TutorialFlujo()
     {
-        exp_ui.GetComponent<Text>().text = "¡Mochilas por favor! Revisa las mochilas de las personas que quieren entrar al trolebús y deja entrar a los que cumplan el reglamento.";
+        exp_ui.GetComponent<Text>().text = "¡Mochilas por favor! Revisa las mochilas de las personas en la fila del trolebús y deja entrar a los que cumplan el reglamento.";
         paso_ui.GetComponent<Image>().sprite = lore_sp;
         while (!_sig)
         {
@@ -80,7 +80,7 @@ public class MochilasTutorial : MonoBehaviour
         }
 
         _sig = false;
-        exp_ui.GetComponent<Text>().text = "Los objetos que deben llevar lo puedes ver en la tabla verde de la izquierda. Recuerda que deben llevar TODO lo de esta tabla.";
+        exp_ui.GetComponent<Text>().text = "Los objetos que deben llevar en su mochila lo puedes ver en la tabla verde de la izquierda. Recuerda que deben llevar <b>TODO</b> lo de esta tabla.";
         paso_ui.GetComponent<Image>().sprite = requeridos_sp;
         while (!_sig)
         {
@@ -88,7 +88,7 @@ public class MochilasTutorial : MonoBehaviour
         }
 
         _sig = false;
-        exp_ui.GetComponent<Text>().text = "Los objetos prohibidos los puedes ver en la tabla roja de la derecha. Nadie debe llevar ni uno solo de estos objetos ¡Mucho ojo!";
+        exp_ui.GetComponent<Text>().text = "Los objetos prohibidos los puedes ver en la tabla roja de la derecha. <b>Nadie debe llevar ni uno solo</b> de estos objetos ¡Mucho ojo!";
         paso_ui.GetComponent<Image>().sprite = baneados_sp;
         while (!_sig)
         {
@@ -97,17 +97,16 @@ public class MochilasTutorial : MonoBehaviour
 
         _sig = false;
         exp_ui.GetComponent<Text>().text = "Después de revisar la mochila, decide si dejaras pasar a la persona o no.";
+        paso_ui.GetComponent<Image>().sprite = mecanica_sp[0];
         while (!_sig)
         {
-            foreach (Sprite sp in mecanica_sp)
-            {
-                paso_ui.GetComponent<Image>().sprite = sp;
-                if (_sig)
-                {
-                    break;
-                }
-                yield return new WaitForSeconds(1);
-            }
+            yield return null;
+        }
+
+        _sig = false;
+        paso_ui.GetComponent<Image>().sprite = mecanica_sp[1];
+        while (!_sig)
+        {
             yield return null;
         }
 
@@ -119,7 +118,7 @@ public class MochilasTutorial : MonoBehaviour
             yield return null;
         }
 
-        exp_ui.GetComponent<Text>().text = "¡Cuidado! Si te equivocas al no dejar pasar una persona que cumple o dejas pasar a una persona que no cumple, bajarás de nivel.";
+        exp_ui.GetComponent<Text>().text = "¡Cuidado! Si te equivocas tres veces (al no dejar pasar una persona que cumple o dejas pasar a una persona que no cumple) bajarás de nivel.";
         paso_ui.GetComponent<Image>().sprite = derrota_sp;
 
         sig_boton.transform.GetChild(0).GetComponent<Text>().text = "Comenzar";
