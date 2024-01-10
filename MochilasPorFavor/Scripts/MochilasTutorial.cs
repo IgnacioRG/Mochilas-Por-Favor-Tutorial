@@ -111,7 +111,7 @@ public class MochilasTutorial : MonoBehaviour
         }
 
         _sig = false;
-        exp_ui.GetComponent<Text>().text = "¡Realiza bien las inspecciones y sube de nivel a un nuevo reto!";
+        exp_ui.GetComponent<Text>().text = "¡Realiza bien tres inspecciones seguidas y sube de nivel a un nuevo reto!";
         paso_ui.GetComponent<Image>().sprite = victoria_sp;
         while (!_sig)
         {
